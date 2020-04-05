@@ -1,0 +1,266 @@
+
+body{
+	background-color: #02010a;
+	font-family: "Dancing Strip", cursive;
+	margin: 10px 0px 10px 0px;
+	}
+
+.contenido {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+#Encabezado {
+	width: 100%;
+	min-height: 100px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+    background-color: #5b7989;
+    padding: 20px;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	display: flex;
+	animation: arrastre 1s !important;
+
+}
+@-webkit-keyframes arrastre{
+	    0%{
+	    	margin-top: 150%;
+	    }
+	    60%{
+	    	margin-top: -5%;
+	    }
+	    100%{
+	    	margin-top: 0%;
+	    }
+}
+
+#Encabezado h1{
+	flex-grow: 2;
+
+}
+
+#Enlaces {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #02010a;
+    font-size: 1.3em;
+
+}
+
+#Enlaces a{
+	color: white;
+	padding: 5px;
+
+}
+.links{
+	padding-top: 30px;
+}
+  
+
+#imagencentral {
+	width: 100%;
+	min-height: 200px;
+	background-color: #82c3a6;
+	text-align: center;
+	padding: 20px 20px
+}
+#imagencentral img{
+	width: 85%;
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+#imageneslat{
+	width: 100%;
+	min-height: 150px;
+	padding: 20px 20px;
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	text-decoration: underline;
+	text-align: center;
+	color: purple;
+}
+
+#imageneslat img{
+	width: 100%;
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+.imagena img{
+	    border: 0px;
+	    transition-property: border;
+	    transition-duration: 2s;
+}
+
+.imagena img:hover { 
+        border: 2px;
+        animation: rotacion 2s, sombra 2s;
+ }
+
+
+@-webkit-keyframes rotacion{
+	    0%{
+	    	transform: rotateZ(0deg);
+	    }
+	    50%{
+	    	transform: rotateZ(10deg);
+	    }
+	    100%{
+	    	transform: rotateZ(0deg);
+	    }
+}
+@-webkit-keyframes sombra{
+	  from{
+	  	   filter: drop-shadow(2px 2px 2px #02010a);
+	  }
+	  to{
+	      filter: drop-shadow(2px 2px 2px #82c3a6);}
+}
+
+.imagenb img{
+	    border: 0px;
+        transition-property: border;
+        transition-duration: 2s;        
+}
+
+.imagenb img:hover{
+	    border: 2px;
+        animation: traslacion 2s, sombrab 2s;
+}
+
+@-webkit-keyframes traslacion{
+	    0%{
+	    	transform: translate(0px, 0px);
+	    }
+	    50%{
+	    	transform: translate(20px, -5px);
+	    }
+	    100%{
+	    	transform: translate(0px, 0px);
+	    }
+
+}
+@-webkit-keyframes sombrab{
+	    from{
+	    	filter: drop-shadow(2px 2px 2px #02010a);
+	    }
+	    to{
+	    	filter: drop-shadow(2px 2px 2px #82c3a6);
+	    }
+}
+
+#infodata {
+	width: 100%;
+	min-height: 150px;
+	padding: 20px 20px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-wrap: nowrap;
+    font-size: 1.05em;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.info {
+	padding-left: 30px;
+
+}
+
+.info p{
+    line-height: 10px;}
+
+.info a{
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+ }
+
+ 
+
+ #redes {
+ 	line-height: 25px !important;
+ }
+
+#redes img {
+	width: 5%;
+}
+
+#datapersonal p>a{
+    color: black;
+}
+
+
+
+#galeria{
+	width: 100%;
+	min-height: 300px;
+	padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #d5c75f;     
+}
+
+#galeria img {
+	width: 100%;
+}
+#imagen1 {
+	filter: blur(10px);
+}
+#imagen2, #imagen4, #imagen6{
+	filter: grayscale(100%);
+}
+#imagen3 {
+	filter: sepia(90%);
+}
+@media screen and (min-width: 900px;){
+	   .contenido {
+	   	max-width: 900px;
+	   	margin: 0 auto;
+	   }
+}
+@media screen and (max-width: 900px){
+        .contenido{
+        	width: 100%;
+        	margin: 0 auto;
+        	margin-bottom: 10px;
+       }
+       #Encabezado{
+       	   min-height: 100px;
+       	   display: flex;
+       	   flex-direction: column;
+       	   text-align: center;
+       	   padding: 0px;
+       	   padding-bottom: 20px;
+       	   line-height: 35px;
+       }
+       #Encabezado h1{
+       	   text-align: center;
+       }
+       #imagencentral{
+       	   min-height: 100px;
+       	   padding: 0px; 
+       }
+       #imagencentral img{
+       	  width: 100%;
+       }
+       #imageneslat{
+       	   padding: 0px;
+       	   min-height: 300px;
+       	   display: flex;
+       	   flex-direction: column;
+       }
+       #infodata{
+       	  padding: 0px;
+       	  min-height: 150px;
+       	  display: flex;
+       	  flex-direction: column;
+       }
+       #galeria{
+       	  padding: 0px;
+       	  min-height: 200px;
+       	  display: flex;
+       	  flex-direction: column;
+       }
+
